@@ -1,4 +1,4 @@
-# Zen Dock for Blender 1.1
+# Zen Dock for Blender 1.1.1
 
 **Zen Dock** adds classical window control bar with toggle, minimize, maximize, close buttons, etc. for every [area](https://docs.blender.org/manual/en/latest/interface/window_system/areas.html) in Blender application.
 
@@ -6,7 +6,7 @@
 |---|
 | |
 
-## Toggle Buttons
+## [Toggle Buttons](toggle.md)
 Allows to quickly toggle [areas](https://docs.blender.org/manual/en/latest/interface/window_system/areas.html) in viewport or open them in separate windows
 
 

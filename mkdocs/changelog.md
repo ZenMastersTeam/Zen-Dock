@@ -1,5 +1,18 @@
 # Changelog
 
+## Release Note Zen Dock 1.1.1
+### New:
+1. Added an option to set area by Ctrl+Shift+LMB on toggle button
+2. Option to filter button in special areas
+
+### Enhancement:
+1. Option to select button mode in Add dialog
+2. Added property button mode in Toggle button settings
+
+### Fix:
+1. Toggle button hint didn't match to its mode
+
+---
 ## Version 1.1.0
 ### New:
 1. Open custom areas like Serpens, Bake Wrangler etc.
