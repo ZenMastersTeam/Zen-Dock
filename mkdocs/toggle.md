@@ -5,12 +5,34 @@ Allows to quickly toggle areas in viewport or open them in separate windows
 |---|
 | |
 
-## Toggle Button Hint
-Move a mouse over toggle button to get a hint be displayed. It will show what additional actions will be called by clicking on the button with the keymaps
+## Toggle Button Actions
+There are actions that are associated with the toggle button, they could be called from popup menu or by clicking on the button with the usage of keymap sequences.
+
+### Default Action - Click
+Depends on button [mode](#mode):
+
+* [Toggle](#toggle-mode)
+* [On](#on-mode)
+* [Off](#off-mode)
+* [Set](#set-mode)
+
+### Open In New Window - Ctrl + Click
+Open new window and set area by given area type
+
+### Set - Shift + Ctrl + Click
+Set active area type by given area type
 
 | ![](img/screen/toggle_button_hint.png) |
 |---|
-| |
+| Button actions hint |
+
+### Actions Menu
+Button actions are available in menu Actions
+
+| ![](img/screen/toggle_button_actions.png) |
+|---|
+| Actions menu |
+
 
 ## Toggle Button Settings
 
