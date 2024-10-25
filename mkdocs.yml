@@ -18,6 +18,9 @@ docs_dir: mkdocs
 site_dir: docs
 theme: readthedocs
 
+plugins:
+   - glightbox
+
 markdown_extensions:
     - smarty
     - admonition
