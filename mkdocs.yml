@@ -6,7 +6,7 @@ nav:
         - Installation: installation.md
     - Modules:
         - Toggle: toggle.md
-        - Restore minimized: min_restore.md
+        - Minimize: min_restore.md
         - System: system.md
     - Additional:
         - Preferences: preferences.md

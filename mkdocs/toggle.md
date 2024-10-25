@@ -83,3 +83,54 @@ Set type of active area with given area type
 | ![](img/screen/set_mode.gif) |
 |---|
 | |
+
+### Direction
+Indicates in which direction new area will be placed
+
+#### Direction within Active Area
+
+- Left
+- Top
+- Right
+- Bottom
+
+| ![](img/screen/area_direction.png) |
+|---|
+| |
+
+#### Direction within Active Window
+
+- Most Left
+- Most Top
+- Most Right
+- Most Bottom
+
+| ![](img/screen/area_direction_most_left_right.png) |
+|---|
+| |
+
+| ![](img/screen/area_direction_most_top_bottom.png) |
+|---|
+| |
+
+#### Size Factor
+Size percentage of width or height depending on direction
+
+| ![](img/screen/area_size_factor.png) |
+|---|
+| |
+
+| ![](img/screen/size_factor_0_5.gif) |
+|---|
+| |
+
+| ![](img/screen/size_factor_0_25.gif) |
+|---|
+| |
+
+### Save and Restore Area and Space Properties
+When new area is opened by default in Blender it has the default area and space settings. For example: UV Editor will have closed N-Panel and closed Toolbar Panel. Zen Dock addon gives an option to remember last area and space properties
+
+| ![](img/screen/save_and_restore_props.png) |
+|---|
+| |
