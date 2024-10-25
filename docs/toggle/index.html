@@ -22,7 +22,11 @@
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
       <script>hljs.highlightAll();</script> 
-</head>
+ <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
 
 <body class="wy-body-for-nav" role="document">
 
@@ -31,11 +35,7 @@
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
           <a href=".." class="icon icon-home"> Zen Dock 1.1.1 for Blender
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
+        </a>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
@@ -78,11 +78,27 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#direction">Direction</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#direction-within-active-area">Direction within Active Area</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#direction-within-active-window">Direction within Active Window</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#size-factor">Size Factor</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#save-and-restore-area-and-space-properties">Save and Restore Area and Space Properties</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#edit-and-lock-properties">Edit and Lock Properties</a>
+    </li>
+        </ul>
+    </li>
         </ul>
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../min_restore/">Restore minimized</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../min_restore/">Minimize</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../system/">System</a>
                   </li>
@@ -127,12 +143,24 @@
 <table>
 <thead>
 <tr>
-<th><img alt="" src="../img/screen/toggle_preview.png" /></th>
+<th><a class="glightbox" href="../img/screen/toggle_preview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_preview.png" /></a></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/toggle_buttons_list.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_buttons_list.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List of toggle buttons in the Preferences</td>
 </tr>
 </tbody>
 </table>
@@ -146,14 +174,10 @@
 <li><a href="#off-mode">Off</a></li>
 <li><a href="#set-mode">Set</a></li>
 </ul>
-<h3 id="open-in-new-window-ctrl-click">Open In New Window - Ctrl + Click<a class="headerlink" href="#open-in-new-window-ctrl-click" title="Permanent link"></a></h3>
-<p>Open new window and set area by given area type</p>
-<h3 id="set-shift-ctrl-click">Set - Shift + Ctrl + Click<a class="headerlink" href="#set-shift-ctrl-click" title="Permanent link"></a></h3>
-<p>Set active area type by given area type</p>
 <table>
 <thead>
 <tr>
-<th><img alt="" src="../img/screen/toggle_button_hint.png" /></th>
+<th><a class="glightbox" href="../img/screen/toggle_button_hint.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_button_hint.png" /></a></th>
 </tr>
 </thead>
 <tbody>
@@ -162,12 +186,16 @@
 </tr>
 </tbody>
 </table>
+<h3 id="open-in-new-window-ctrl-click">Open In New Window - Ctrl + Click<a class="headerlink" href="#open-in-new-window-ctrl-click" title="Permanent link"></a></h3>
+<p>Open new window and set area by given area type</p>
+<h3 id="set-shift-ctrl-click">Set - Shift + Ctrl + Click<a class="headerlink" href="#set-shift-ctrl-click" title="Permanent link"></a></h3>
+<p><a href="#set-mode">Set active area</a> type by given area type</p>
 <h3 id="actions-menu">Actions Menu<a class="headerlink" href="#actions-menu" title="Permanent link"></a></h3>
 <p>Button actions are available in menu Actions</p>
 <table>
 <thead>
 <tr>
-<th><img alt="" src="../img/screen/toggle_button_actions.png" /></th>
+<th><a class="glightbox" href="../img/screen/toggle_button_actions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_button_actions.png" /></a></th>
 </tr>
 </thead>
 <tbody>
@@ -180,7 +208,7 @@
 <table>
 <thead>
 <tr>
-<th><img alt="" src="../img/screen/toggle_settings.png" /></th>
+<th><a class="glightbox" href="../img/screen/toggle_settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_settings.png" /></a></th>
 </tr>
 </thead>
 <tbody>
@@ -193,7 +221,7 @@
 <table>
 <thead>
 <tr>
-<th><img alt="" src="../img/screen/toggle_button_area_type.png" /></th>
+<th><a class="glightbox" href="../img/screen/toggle_button_area_type.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_button_area_type.png" /></a></th>
 </tr>
 </thead>
 <tbody>
@@ -207,7 +235,7 @@
 <table>
 <thead>
 <tr>
-<th><img alt="" src="../img/screen/toggle_button_modes.png" /></th>
+<th><a class="glightbox" href="../img/screen/toggle_button_modes.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_button_modes.png" /></a></th>
 </tr>
 </thead>
 <tbody>
@@ -221,7 +249,7 @@
 <table>
 <thead>
 <tr>
-<th><img alt="" src="../img/screen/toggle_mode.gif" /></th>
+<th><a class="glightbox" href="../img/screen/toggle_mode.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_mode.gif" /></a></th>
 </tr>
 </thead>
 <tbody>
@@ -239,7 +267,7 @@
 <table>
 <thead>
 <tr>
-<th><img alt="" src="../img/screen/on_mode.gif" /></th>
+<th><a class="glightbox" href="../img/screen/on_mode.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/on_mode.gif" /></a></th>
 </tr>
 </thead>
 <tbody>
@@ -253,7 +281,7 @@
 <table>
 <thead>
 <tr>
-<th><img alt="" src="../img/screen/off_mode.gif" /></th>
+<th><a class="glightbox" href="../img/screen/off_mode.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/off_mode.gif" /></a></th>
 </tr>
 </thead>
 <tbody>
@@ -267,7 +295,7 @@
 <table>
 <thead>
 <tr>
-<th><img alt="" src="../img/screen/set_mode.gif" /></th>
+<th><a class="glightbox" href="../img/screen/set_mode.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/set_mode.gif" /></a></th>
 </tr>
 </thead>
 <tbody>
@@ -276,12 +304,154 @@
 </tr>
 </tbody>
 </table>
+<h3 id="direction">Direction<a class="headerlink" href="#direction" title="Permanent link"></a></h3>
+<p>Indicates in which direction new area will be placed</p>
+<h4 id="direction-within-active-area">Direction within Active Area<a class="headerlink" href="#direction-within-active-area" title="Permanent link"></a></h4>
+<ul>
+<li>Left</li>
+<li>Top</li>
+<li>Right</li>
+<li>Bottom</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/area_direction.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/area_direction.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="direction-within-active-window">Direction within Active Window<a class="headerlink" href="#direction-within-active-window" title="Permanent link"></a></h4>
+<ul>
+<li>Most Left</li>
+<li>Most Top</li>
+<li>Most Right</li>
+<li>Most Bottom</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/area_direction_most_left_right.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/area_direction_most_left_right.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/area_direction_most_top_bottom.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/area_direction_most_top_bottom.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="size-factor">Size Factor<a class="headerlink" href="#size-factor" title="Permanent link"></a></h4>
+<p>Size percentage of width or height depending on direction</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/area_size_factor.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/area_size_factor.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/size_factor_0_5.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/size_factor_0_5.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/size_factor_0_25.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/size_factor_0_25.gif" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="save-and-restore-area-and-space-properties">Save and Restore Area and Space Properties<a class="headerlink" href="#save-and-restore-area-and-space-properties" title="Permanent link"></a></h3>
+<p>When new area is opened by default in Blender it has the default area and space settings. For example: UV Editor will have closed N-Panel and closed Toolbar Panel. Zen Dock addon gives an option to remember last area and space properties</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/save_and_restore_props.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/save_and_restore_props.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="edit-and-lock-properties">Edit and Lock Properties<a class="headerlink" href="#edit-and-lock-properties" title="Permanent link"></a></h4>
+<p>You can manuall edit area and space properties and lock its values. So every time new area properties will be assigned by fixed values</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/edit_properties.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/edit_properties.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edit properties</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/lock_properties.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/lock_properties.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lock properties</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/space_properties.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/space_properties.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Space properties editor window</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../installation/" class="btn btn-neutral float-left" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../min_restore/" class="btn btn-neutral float-right" title="Restore minimized">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../min_restore/" class="btn btn-neutral float-right" title="Minimize">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -315,12 +485,12 @@
     <script>var base_url = "..";</script>
     <script src="../js/theme_extra.js"></script>
     <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
     <script>
         jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
         });
     </script>
 
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
 </html>

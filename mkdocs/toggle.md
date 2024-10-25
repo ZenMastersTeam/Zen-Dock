@@ -5,6 +5,10 @@ Allows to quickly toggle areas in viewport or open them in separate windows
 |---|
 | |
 
+| ![](img/screen/toggle_buttons_list.png) |
+|---|
+| List of toggle buttons in the Preferences |
+
 ## Toggle Button Actions
 There are actions that are associated with the toggle button, they could be called from popup menu or by clicking on the button with the usage of keymap sequences.
 
@@ -16,15 +20,15 @@ Depends on button [mode](#mode):
 * [Off](#off-mode)
 * [Set](#set-mode)
 
+| ![](img/screen/toggle_button_hint.png) |
+|---|
+| Button actions hint |
+
 ### Open In New Window - Ctrl + Click
 Open new window and set area by given area type
 
 ### Set - Shift + Ctrl + Click
-Set active area type by given area type
-
-| ![](img/screen/toggle_button_hint.png) |
-|---|
-| Button actions hint |
+[Set active area](#set-mode) type by given area type
 
 ### Actions Menu
 Button actions are available in menu Actions
@@ -134,3 +138,18 @@ When new area is opened by default in Blender it has the default area and space 
 | ![](img/screen/save_and_restore_props.png) |
 |---|
 | |
+
+#### Edit and Lock Properties
+You can manuall edit area and space properties and lock its values. So every time new area properties will be assigned by fixed values
+
+| ![](img/screen/edit_properties.png) |
+|---|
+| Edit properties |
+
+| ![](img/screen/lock_properties.png) |
+|---|
+| Lock properties |
+
+| ![](img/screen/space_properties.png) |
+|---|
+| Space properties editor window |

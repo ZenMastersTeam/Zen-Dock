@@ -22,7 +22,11 @@
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
       <script>hljs.highlightAll();</script> 
-</head>
+ <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
 
 <body class="wy-body-for-nav" role="document">
 
@@ -31,11 +35,7 @@
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
           <a href=".." class="icon icon-home"> Zen Dock 1.1.1 for Blender
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
+        </a>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
@@ -50,7 +50,7 @@
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../toggle/">Toggle</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../min_restore/">Restore minimized</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../min_restore/">Minimize</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">System</a>
     <ul class="current">
@@ -97,7 +97,7 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../min_restore/" class="btn btn-neutral float-left" title="Restore minimized"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../min_restore/" class="btn btn-neutral float-left" title="Minimize"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../preferences/" class="btn btn-neutral float-right" title="Preferences">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -132,12 +132,12 @@
     <script>var base_url = "..";</script>
     <script src="../js/theme_extra.js"></script>
     <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
     <script>
         jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
         });
     </script>
 
-</body>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
 </html>
