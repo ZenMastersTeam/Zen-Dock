@@ -1,5 +1,15 @@
 # Changelog
 
+# Release Note Zen Dock 1.1.2
+### New:
+1. Toggle most left|top|right|bottom uses new fast Blender 4.3 API.
+2. Restoring of minimized area is manual by default. Automatic restore can be selected by default in options.
+
+### Enhancement:
+1. Minimize button is set inactive when there is only 1 active area.
+
+---
+
 ## Release Note Zen Dock 1.1.1
 ### New:
 1. Added an option to set area by Ctrl+Shift+LMB on toggle button
