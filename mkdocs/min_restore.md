@@ -12,3 +12,34 @@ Defines the behaviour of the minimize button in control bar.
 | ![](img/screen/minimize_restore_manual.gif) |
 |---|
 | Manual area restore |
+
+!!! Properties
+    | ![](img/screen/minimize_restore_settings.png) |
+    |---|
+    | Restore Selector |
+
+#### Restore within Active Area
+
+- Left
+- Top
+- Right
+- Bottom
+
+| ![](img/screen/area_direction.png) |
+|---|
+| |
+
+#### Restore within Active Window
+
+- Most Left
+- Most Top
+- Most Right
+- Most Bottom
+
+| ![](img/screen/area_direction_most_left_right.png) |
+|---|
+| |
+
+| ![](img/screen/area_direction_most_top_bottom.png) |
+|---|
+| |

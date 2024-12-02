@@ -1,6 +1,13 @@
 # Changelog
 
-# Release Note Zen Dock 1.1.2
+## Version 1.1.3
+
+### Fix:
+1. Crash in Viewport 3D when Local view is set.
+
+---
+
+## Version 1.1.2
 ### New:
 1. Toggle most left|top|right|bottom uses new fast Blender 4.3 API.
 2. Restoring of minimized area is manual by default. Automatic restore can be selected by default in options.
@@ -10,7 +17,7 @@
 
 ---
 
-## Release Note Zen Dock 1.1.1
+## Version 1.1.1
 ### New:
 1. Added an option to set area by Ctrl+Shift+LMB on toggle button
 2. Option to filter button in special areas
