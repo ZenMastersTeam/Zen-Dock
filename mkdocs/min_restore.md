@@ -8,6 +8,7 @@ Defines the behaviour of the minimize button in control bar.
     ![](img/screen/minimize_mode.png)
 
 ### Manual
+User selects where to restore minimized area.
 
 | ![](img/screen/minimize_restore_manual.gif) |
 |---|
@@ -43,3 +44,10 @@ Defines the behaviour of the minimize button in control bar.
 | ![](img/screen/area_direction_most_top_bottom.png) |
 |---|
 | |
+
+### Auto
+Minimized area is restored automatically.
+
+!!! Warning
+    This mode can break your layout if there was more than 1 area minimized.
+
