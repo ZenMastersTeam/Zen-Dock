@@ -1,5 +1,8 @@
 # Toggle Buttons
-Allows to quickly toggle areas in viewport or open them in separate windows
+Allows to:
+
+- **manage areas** (quickly toggle areas in viewport or open them in separate windows)
+- **execute python commands** (execute operators, call panels, menus, pie menus etc.)
 
 | ![](img/screen/toggle_preview.png) |
 |---|
@@ -19,8 +22,9 @@ Depends on button [mode](#mode):
 * [On](#on-mode)
 * [Off](#off-mode)
 * [Set](#set-mode)
+* [Command](#command-mode)
 
-| ![](img/screen/toggle_button_hint.png) |
+| ![](img/screen/toggle_button_hint.png)|
 |---|
 | Button actions hint |
 
@@ -33,16 +37,16 @@ Open new window and set area by given area type
 ### Actions Menu
 Button actions are available in menu Actions
 
-| ![](img/screen/toggle_button_actions.png) |
-|---|
-| Actions menu |
+| ![](img/screen/toggle_button_actions.png) | ![](img/screen/toggle_command_button_actions.png) |
+|---|---|
+| Area management actions | Command button actions |
 
 
 ## Toggle Button Settings
 
-| ![](img/screen/toggle_settings.png) |
-|---|
-| |
+| ![](img/screen/toggle_settings.png) | ![](img/screen/toggle_command_button_settings.png)  |
+|---|---|
+| Area management settings | Command button settings |
 
 ### Area Type
 
@@ -87,6 +91,76 @@ Set type of active area with given area type
 | ![](img/screen/set_mode.gif) |
 |---|
 | |
+
+### Command Mode
+This mode allows to execute operators, call panels, menus, pie menus or custom scripts
+
+#### Command
+This field depends on [Command Type](#command-type)
+
+| ![](img/screen/toggle_command_cmd.png) |
+|---|
+| Example of command for [Operator](#operator) [command type](#command-type) |
+
+#### Command Type
+Defines an action that will be done with command text
+
+- [Operator](#operator)
+    * [Execute python file](#execute-python-file)
+    * [Execute text block](#execute-text-block)
+- [Panel](#panel)
+- [Menu](#menu)
+- [Pie Menu](#pie-menu)
+- [Script](#script)
+
+##### Operator
+Must be [a valid python command to call an operator](https://docs.blender.org/api/current/bpy.ops.html)
+
+| ![](img/screen/toggle_command_select_operator.png) |
+|---|
+| Operator select menu |
+
+###### Execute Python file
+You can use Select Script wizzard to associate any python script located on disk with the button
+
+| ![](img/screen/toggle_command_select_script.png) |
+|---|
+| Example of script associated with the button |
+
+###### Execute Text Block
+You can use Select Text Block wizzard to associate any script Text block with the button
+
+| ![](img/screen/toggle_command_select_text_block_2.png) |
+|---|
+| Example of text block associated with the button |
+
+##### Panel
+Must be a valid python name of the existing panel in Blender python types API space
+
+| ![](img/screen/toggle_command_panel.png) |
+|---|
+| Example of command for [Panel](#operator) [command type](#command-type) |
+
+##### Menu
+Must be a valid python name of the existing panel in Blender python types API space
+
+| ![](img/screen/toggle_command_menu.png) |
+|---|
+| Example of command for [Menu](#menu) [command type](#command-type) |
+
+##### Pie Menu
+Must be a valid python name of the existing panel in Blender python types API space
+
+| ![](img/screen/toggle_command_pie.png) |
+|---|
+| Example of command for [Pie Menu](#pie-menu) [command type](#command-type) |
+
+##### Script
+Must be a valid chunk of python code
+
+| ![](img/screen/toggle_command_script.png) |
+|---|
+| Example of command for [Script](#script) [command type](#command-type) |
 
 ### Direction
 Indicates in which direction new area will be placed

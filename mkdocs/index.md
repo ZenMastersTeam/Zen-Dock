@@ -1,4 +1,4 @@
-# Zen Dock for Blender 1.1.3
+# Zen Dock for Blender 1.2
 
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
 <iframe src="https://www.youtube.com/embed/eBkE4bz7mDc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>
@@ -21,16 +21,19 @@
 | |
 
 ## [Toggle Buttons](toggle.md)
-Allows to quickly toggle [areas](https://docs.blender.org/manual/en/latest/interface/window_system/areas.html) in viewport or open them in separate windows
+Allows to:
 
+- **manage areas** (quickly toggle [areas](https://docs.blender.org/manual/en/latest/interface/window_system/areas.html) in viewport or open them in separate windows)
+- **execute python commands** (execute [operators](https://docs.blender.org/api/current/bpy.ops.html), call panels, menus, pie menus etc.)
 
-## Minimize Buttons
+## [Minimize Buttons](min_restore.md)
 Restores minimized [areas](https://docs.blender.org/manual/en/latest/interface/window_system/areas.html) in viewport and restore its space settings such as tools, n-panel visibility etc.
 
-
-## System Buttons
+## [System Buttons](system.md)
 Controls [areas](https://docs.blender.org/manual/en/latest/interface/window_system/areas.html) visibility
 
+- Horizontal Split
+- Vertical Split
 - Minimize
 - Maximize
 - Close
@@ -48,3 +51,4 @@ Controls [areas](https://docs.blender.org/manual/en/latest/interface/window_syst
 - [**Quickly toggle areas**](toggle.md).
 - [**Restores minimized areas**](min_restore.md).
 - [**Control areas visibility**](system.md).
+- [**Execute operators, call panels, menus, pie menus etc**](toggle.md#command-mode).

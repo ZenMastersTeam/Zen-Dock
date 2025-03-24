@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Toggle - Zen Dock 1.1.3 for Blender</title>
+    <title>Toggle - Zen Dock 1.2 for Blender</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -34,7 +34,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Zen Dock 1.1.3 for Blender
+          <a href=".." class="icon icon-home"> Zen Dock 1.2 for Blender
         </a>
       </div>
 
@@ -75,6 +75,14 @@
     <li class="toctree-l4"><a class="reference internal" href="#off-mode">Off Mode</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#set-mode">Set Mode</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#command-mode">Command Mode</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#command">Command</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#command-type">Command Type</a>
     </li>
         </ul>
     </li>
@@ -121,7 +129,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Zen Dock 1.1.3 for Blender</a>
+          <a href="..">Zen Dock 1.2 for Blender</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -139,7 +147,11 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="toggle-buttons">Toggle Buttons<a class="headerlink" href="#toggle-buttons" title="Permanent link"></a></h1>
-<p>Allows to quickly toggle areas in viewport or open them in separate windows</p>
+<p>Allows to:</p>
+<ul>
+<li><strong>manage areas</strong> (quickly toggle areas in viewport or open them in separate windows)</li>
+<li><strong>execute python commands</strong> (execute operators, call panels, menus, pie menus etc.)</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -173,6 +185,7 @@
 <li><a href="#on-mode">On</a></li>
 <li><a href="#off-mode">Off</a></li>
 <li><a href="#set-mode">Set</a></li>
+<li><a href="#command-mode">Command</a></li>
 </ul>
 <table>
 <thead>
@@ -196,11 +209,13 @@
 <thead>
 <tr>
 <th><a class="glightbox" href="../img/screen/toggle_button_actions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_button_actions.png" /></a></th>
+<th><a class="glightbox" href="../img/screen/toggle_command_button_actions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_command_button_actions.png" /></a></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Actions menu</td>
+<td>Area management actions</td>
+<td>Command button actions</td>
 </tr>
 </tbody>
 </table>
@@ -209,11 +224,13 @@
 <thead>
 <tr>
 <th><a class="glightbox" href="../img/screen/toggle_settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_settings.png" /></a></th>
+<th><a class="glightbox" href="../img/screen/toggle_command_button_settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_command_button_settings.png" /></a></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>Area management settings</td>
+<td>Command button settings</td>
 </tr>
 </tbody>
 </table>
@@ -301,6 +318,133 @@
 <tbody>
 <tr>
 <td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="command-mode">Command Mode<a class="headerlink" href="#command-mode" title="Permanent link"></a></h3>
+<p>This mode allows to execute operators, call panels, menus, pie menus or custom scripts</p>
+<h4 id="command">Command<a class="headerlink" href="#command" title="Permanent link"></a></h4>
+<p>This field depends on <a href="#command-type">Command Type</a></p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/toggle_command_cmd.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_command_cmd.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of command for <a href="#operator">Operator</a> <a href="#command-type">command type</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="command-type">Command Type<a class="headerlink" href="#command-type" title="Permanent link"></a></h4>
+<p>Defines an action that will be done with command text</p>
+<ul>
+<li><a href="#operator">Operator</a><ul>
+<li><a href="#execute-python-file">Execute python file</a></li>
+<li><a href="#execute-text-block">Execute text block</a></li>
+</ul>
+</li>
+<li><a href="#panel">Panel</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#pie-menu">Pie Menu</a></li>
+<li><a href="#script">Script</a></li>
+</ul>
+<h5 id="operator">Operator<a class="headerlink" href="#operator" title="Permanent link"></a></h5>
+<p>Must be <a href="https://docs.blender.org/api/current/bpy.ops.html">a valid python command to call an operator</a></p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/toggle_command_select_operator.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_command_select_operator.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operator select menu</td>
+</tr>
+</tbody>
+</table>
+<h6 id="execute-python-file">Execute Python file<a class="headerlink" href="#execute-python-file" title="Permanent link"></a></h6>
+<p>You can use Select Script wizzard to associate any python script located on disk with the button</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/toggle_command_select_script.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_command_select_script.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of script associated with the button</td>
+</tr>
+</tbody>
+</table>
+<h6 id="execute-text-block">Execute Text Block<a class="headerlink" href="#execute-text-block" title="Permanent link"></a></h6>
+<p>You can use Select Text Block wizzard to associate any script Text block with the button</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/toggle_command_select_text_block_2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_command_select_text_block_2.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of text block associated with the button</td>
+</tr>
+</tbody>
+</table>
+<h5 id="panel">Panel<a class="headerlink" href="#panel" title="Permanent link"></a></h5>
+<p>Must be a valid python name of the existing panel in Blender python types API space</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/toggle_command_panel.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_command_panel.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of command for <a href="#operator">Panel</a> <a href="#command-type">command type</a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="menu">Menu<a class="headerlink" href="#menu" title="Permanent link"></a></h5>
+<p>Must be a valid python name of the existing panel in Blender python types API space</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/toggle_command_menu.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_command_menu.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of command for <a href="#menu">Menu</a> <a href="#command-type">command type</a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="pie-menu">Pie Menu<a class="headerlink" href="#pie-menu" title="Permanent link"></a></h5>
+<p>Must be a valid python name of the existing panel in Blender python types API space</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/toggle_command_pie.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_command_pie.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of command for <a href="#pie-menu">Pie Menu</a> <a href="#command-type">command type</a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="script">Script<a class="headerlink" href="#script" title="Permanent link"></a></h5>
+<p>Must be a valid chunk of python code</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/toggle_command_script.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/toggle_command_script.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example of command for <a href="#script">Script</a> <a href="#command-type">command type</a></td>
 </tr>
 </tbody>
 </table>

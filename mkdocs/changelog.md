@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 1.2.0
+
+### New:
+1. Command buttons.
+2. Blender 4.4 support.
+
+---
+
+
 ## Version 1.1.3
 
 ### Fix:
