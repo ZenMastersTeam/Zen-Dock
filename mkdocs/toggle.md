@@ -230,3 +230,10 @@ You can manuall edit area and space properties and lock its values. So every tim
 | ![](img/screen/space_properties.png) |
 |---|
 | Space properties editor window |
+
+## Import-Export
+Use popup-menu at the right corner of [buttons list](#toggle-buttons) to import or export in json format.
+
+| ![](img/screen/toggle_buttons_io.png) |
+|---|
+| Import-export menus |
