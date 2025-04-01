@@ -1,5 +1,5 @@
-site_name: Zen Dock 1.2 for Blender
-site_description: Zen Dock 1.2 for Blender Documentation
+site_name: Zen Dock 1.2.1 for Blender
+site_description: Zen Dock 1.2.1 for Blender Documentation
 nav:
     - Getting Started:
         - Introduction: index.md
@@ -8,6 +8,7 @@ nav:
         - Toggle: toggle.md
         - Minimize: min_restore.md
         - System: system.md
+        - Tools: tools.md
     - Additional:
         - Preferences: preferences.md
         - Help: help.md

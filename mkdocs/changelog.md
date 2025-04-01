@@ -1,9 +1,15 @@
 # Changelog
 
+## Version 1.2.1
+### New:
+1. [Open workspace in a new window](tools.md#open-workspace-in-a-new-window).
+
+---
+
 ## Version 1.2.0
 
 ### New:
-1. Command buttons.
+1. [Command buttons](toggle.md#command).
 2. Blender 4.4 support.
 
 ---

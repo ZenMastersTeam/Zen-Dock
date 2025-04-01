@@ -1,8 +1,8 @@
 # Toggle Buttons
 Allows to:
 
-- **manage areas** (quickly toggle areas in viewport or open them in separate windows)
-- **execute python commands** (execute operators, call panels, menus, pie menus etc.)
+- **Manage areas** (quickly toggle areas in viewport or open them in separate windows)
+- **Execute python commands** (execute operators, call panels, menus, pie menus etc.)
 
 | ![](img/screen/toggle_preview.png) |
 |---|
@@ -40,7 +40,6 @@ Button actions are available in menu Actions
 | ![](img/screen/toggle_button_actions.png) | ![](img/screen/toggle_command_button_actions.png) |
 |---|---|
 | Area management actions | Command button actions |
-
 
 ## Toggle Button Settings
 
@@ -119,6 +118,10 @@ Must be [a valid python command to call an operator](https://docs.blender.org/ap
 | ![](img/screen/toggle_command_select_operator.png) |
 |---|
 | Operator select menu |
+
+| ![](img/screen/open_geo_nodes_in_a_new_wnd.gif) |
+|---|
+| Example how to setup opening of the Geometry Nodes [workspace in a new window](tools.md#open-workspace-in-a-new-window) |
 
 ###### Execute Python file
 You can use Select Script wizzard to associate any python script located on disk with the button

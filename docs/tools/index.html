@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Tools - Zen Dock 1.2.1 for Blender</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Tools";
+        var mkdocs_page_input_path = "tools.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+ <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Zen Dock 1.2.1 for Blender
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modules</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../toggle/">Toggle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../min_restore/">Minimize</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../system/">System</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Tools</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#open-workspace-in-a-new-window">Open Workspace In a New Window</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#current-blend-workspaces-presets">Current Blend Workspaces Presets</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#workspace-in-a-new-window-options">Workspace In a New Window Options</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#workspace-name">Workspace Name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#workspace-category">Workspace Category</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mode">Mode</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#window-bounds">Window Bounds</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Additional</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../help/">Help</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../downloads/">Downloads</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Zen Dock 1.2.1 for Blender</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Modules</li>
+      <li class="breadcrumb-item active">Tools</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link"></a></h1>
+<h2 id="open-workspace-in-a-new-window">Open Workspace In a New Window<a class="headerlink" href="#open-workspace-in-a-new-window" title="Permanent link"></a></h2>
+<p>Operator to open or toggle workspace in a new window with an option for <strong>Windows OS users</strong> to specify window coordinates.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/workspace_in_wnd_preview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/workspace_in_wnd_preview.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="current-blend-workspaces-presets">Current Blend Workspaces Presets<a class="headerlink" href="#current-blend-workspaces-presets" title="Permanent link"></a></h3>
+<p>Set of workspaces that is saved in the current blend file can be quickly accessed to toggle in a new window via menu buttons.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/workspace_in_wnd_current_workspaces.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/workspace_in_wnd_current_workspaces.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workspace-in-a-new-window-options">Workspace In a New Window Options<a class="headerlink" href="#workspace-in-a-new-window-options" title="Permanent link"></a></h3>
+<p>You can select a workspace and adjust conditions for a hotkey.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/workspace_in_wnd_select.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/workspace_in_wnd_select.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/workspace_in_wnd_select_preview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/workspace_in_wnd_select_preview.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="workspace-name">Workspace Name<a class="headerlink" href="#workspace-name" title="Permanent link"></a></h4>
+<p>Must be a valid name of the existing workspace in the current blend file or in the one of the default layouts.</p>
+<h4 id="workspace-category">Workspace Category<a class="headerlink" href="#workspace-category" title="Permanent link"></a></h4>
+<p>Must be a valid category name that are shown during &ldquo;Add Workspace&rdquo; menu.</p>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/workspace_in_wnd_name.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/workspace_in_wnd_name.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Workspace name must match the name in the wizzard</td>
+</tr>
+</tbody>
+</table>
+<h4 id="mode">Mode<a class="headerlink" href="#mode" title="Permanent link"></a></h4>
+<p>Defines the behaviour how to open workspace</p>
+<h5 id="toggle-workspace">Toggle Workspace<a class="headerlink" href="#toggle-workspace" title="Permanent link"></a></h5>
+<p>If workspace is already open in a window, the window will be closed.</p>
+<h5 id="open-workspace">Open Workspace<a class="headerlink" href="#open-workspace" title="Permanent link"></a></h5>
+<p>Always open new window with the corresponding workspace.</p>
+<h4 id="window-bounds">Window Bounds<a class="headerlink" href="#window-bounds" title="Permanent link"></a></h4>
+<p>Coordinates of the new window bounds (left, top, width, height) in absolute screen desktop pixel values.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>This option is available only for Window OS users</strong></p>
+</div>
+<table>
+<thead>
+<tr>
+<th><a class="glightbox" href="../img/screen/workspace_in_wnd_bounds.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../img/screen/workspace_in_wnd_bounds.png" /></a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../system/" class="btn btn-neutral float-left" title="System"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../preferences/" class="btn btn-neutral float-right" title="Preferences">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../system/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../preferences/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+</html>
