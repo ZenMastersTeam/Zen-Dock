@@ -3,6 +3,7 @@
 ## Version 1.2.1
 ### New:
 1. [Open workspace in a new window](tools.md#open-workspace-in-a-new-window).
+2. Import-export buttons.
 
 ---
 
