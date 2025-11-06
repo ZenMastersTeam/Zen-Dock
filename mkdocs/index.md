@@ -1,4 +1,4 @@
-# Zen Dock for Blender 1.2.1
+# Zen Dock for Blender 1.3.0
 
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
 <iframe src="https://www.youtube.com/embed/eBkE4bz7mDc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" seamless="" frameborder="0"></iframe>

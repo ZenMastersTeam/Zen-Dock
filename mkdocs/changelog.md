@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 1.3.0
+### New:
+1. Support Blender 5.0.
+
+### Fixed:
+1. Some operator properties were not saved in operator editor for button command mode.
+
+---
+
 ## Version 1.2.1
 ### New:
 1. [Open workspace in a new window](tools.md#open-workspace-in-a-new-window).
