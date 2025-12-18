@@ -4,6 +4,8 @@
 ### Enh:
 1. Added area filters for system buttons.
 
+---
+
 ## Version 1.3.0
 ### New:
 1. Support Blender 5.0.
